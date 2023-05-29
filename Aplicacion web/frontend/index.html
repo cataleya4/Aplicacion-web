@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestión de Torneos de Tenis</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Gestión de Torneos de Tenis</h1>
+  
+  <div id="tournament-form">
+    <h2>Crear Torneo</h2>
+    <form id="create-tournament-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" required>
+      
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" required>
+      
+      <label for="location">Ubicación:</label>
+      <input type="text" id="location" required>
+      
+      <label for="participants">Participantes:</label>
+      <input type="text" id="participants" required>
+      
+      <button type="submit">Crear Torneo</button>
+    </form>
+  </div>
+  
+  <div id="tournament-list">
+    <h2>Listado de Torneos</h2>
+    <ul id="tournament-list-items"></ul>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
